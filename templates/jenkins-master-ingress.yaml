@@ -17,6 +17,6 @@ spec:
           servicePort: {{ .Values.Master.ServicePort }}
 {{- if .Values.Master.Ingress.TLS }}
   tls:
-{{ toYaml .Values.Master.Ingress.TLS | indent 4 }}
+{{ toYaml .Values.Master.Ingress.TLS | indent 7 }}
 {{- end -}}
 {{- end }}
